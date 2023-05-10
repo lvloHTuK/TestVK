@@ -20,20 +20,44 @@ namespace UsersVK.Data.Repositories
         }
 
 
-        public async Task Add(User user) => await db.AddAsync(user);
+        public async Task Add(User user)
+        {
+
+            //await db.AddAsync(user);
+            user.UserGroupId = Guid.NewGuid();
+            user.UserStateId = Guid.NewGuid();
+            await db.Users.AddAsync(user);
+            UserGroup userGroup = new UserGroup { Id = user.UserGroupId };
+            UserState userState = new UserState { Id = user.UserStateId, Code = StateEnum.Active };
+            await db.UserGroups.AddAsync(userGroup);
+            await db.UserStates.AddAsync(userState);
+
+        }
+
+        public async Task Remove(User user)
+        {
+            db.Users.Remove(user);
+            var userGroup = await db.UserGroups.FirstOrDefaultAsync(x => x.Id == user.UserGroupId);
+            var userState = await db.UserStates.FirstOrDefaultAsync(x => x.Id == user.UserStateId);
+            db.UserGroups.Remove(userGroup);
+            db.UserStates.Remove(userState);
+
+        }
 
         public async Task<User> AddRole(User user, string role)
         {
-            var _user = await db.Users.FirstOrDefaultAsync(x => x.Id == user.Id);
+            var _user = await db.Users.FirstOrDefaultAsync(x => x.Login == user.Login);
+            var _userGroup = await db.UserGroups.FirstOrDefaultAsync(x => x.Id == _user.UserGroupId);
 
             if (user != null)
             {
                 if (GroupEnum.Admin.ToString() == role)
                 {
-                    if (GetRole("Admin") == null)
+                    var getRole = await GetRole("Admin");
+                    if (getRole == null)
                     {
-                        _user.UserGroupId.Code = GroupEnum.Admin;
-                        db.Users.Update(user);
+                        _userGroup.Code = GroupEnum.Admin;
+                        db.UserGroups.Update(_userGroup);
 
                         return _user;
                     }
@@ -42,8 +66,8 @@ namespace UsersVK.Data.Repositories
                 }
                 else if (GroupEnum.User.ToString() == role)
                 {
-                    _user.UserGroupId.Code = GroupEnum.User;
-                    db.Users.Update(user);
+                    _userGroup.Code = GroupEnum.User;
+                    db.UserGroups.Update(_userGroup);
 
                     return _user;
                 }
@@ -57,11 +81,12 @@ namespace UsersVK.Data.Repositories
         public async Task<User> Delete(User user)
         {
             var _user = await db.Users.FirstOrDefaultAsync(x => x.Id == user.Id);
+            var _userState = await db.UserStates.FirstOrDefaultAsync(x => x.Id == _user.UserStateId);
 
             if (user != null)
             {
-                _user.UserStateId.Code = StateEnum.Blocked;
-                db.Users.Update(user);
+                _userState.Code = StateEnum.Blocked;
+                db.UserStates.Update(_userState);
 
                 return _user;
             }
@@ -69,14 +94,18 @@ namespace UsersVK.Data.Repositories
             return null;
         }
 
-        public async Task<User> Edit(User user, string login)
+        public async Task<User> AddDescription(User user, string descGroup, string descState)
         {
             var _user = await db.Users.FirstOrDefaultAsync(x => x.Id == user.Id);
+            var _userGroup = await GetUserGroup(user.UserGroupId);
+            var _userState = await GetUserState(user.UserStateId);
 
             if (user != null)
             {
-                _user.Login = login;
-                db.Users.Update(user);
+                _userGroup.Description = descGroup;
+                db.UserGroups.Update(_userGroup);
+                _userState.Description = descState;
+                db.UserStates.Update(_userState);
 
                 return _user;
             }
@@ -120,13 +149,42 @@ namespace UsersVK.Data.Repositories
             return null;
         }
 
-        public async Task<User> GetRole(string role)
+        public async Task<UserGroup> GetRole(string role)
         {
-            var user = await db.Users.FirstOrDefaultAsync(x => x.UserStateId.Code.ToString() == role);
-
-            if (user != null)
+            GroupEnum y = GroupEnum.User;
+            if(role == "Admin")
             {
-                return user;
+                y = GroupEnum.Admin;
+            }
+            var userGroup = await db.UserGroups.FirstOrDefaultAsync(x => x.Code == y);
+
+            if (userGroup != null)
+            {
+                return userGroup;
+            }
+
+            return null;
+        }
+
+        public async Task<UserGroup> GetUserGroup(Guid id)
+        {
+            var userGroup = await db.UserGroups.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (userGroup != null)
+            {
+                return userGroup;
+            }
+
+            return null;
+        }
+
+        public async Task<UserState> GetUserState(Guid id)
+        {
+            var userState = await db.UserStates.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (userState != null)
+            {
+                return userState;
             }
 
             return null;

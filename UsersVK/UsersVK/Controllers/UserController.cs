@@ -31,10 +31,12 @@ namespace UsersVK.Controllers
         public async Task<ActionResult<User>> Get(string login)
         {
             User user = await _userRepository.GetByLogin(login.Substring(1, login.Length - 2));
+            UserGroup userGroup = await _userRepository.GetUserGroup(user.UserGroupId);
+            UserState userState = await _userRepository.GetUserState(user.UserStateId);
 
             if (user != null)
             {
-                return new ObjectResult(user);
+                return new ObjectResult(new PrintClass(user, userGroup, userState));
             }
 
             return NotFound("Пользователь не найден");
@@ -48,7 +50,14 @@ namespace UsersVK.Controllers
 
             if (users != null)
             {
-                return new ObjectResult(users);
+                List<PrintClass> printList = new List<PrintClass>();
+                foreach (var user in users)
+                {
+                    UserGroup userGroup = await _userRepository.GetUserGroup(user.UserGroupId);
+                    UserState userState = await _userRepository.GetUserState(user.UserStateId);
+                    printList.Add(new PrintClass(user, userGroup, userState));
+                }
+                return new ObjectResult(printList);
             }
 
             return NotFound("Пользователей нет");
@@ -73,21 +82,21 @@ namespace UsersVK.Controllers
                             {
                                 Login = model.Login,
                                 Password = model.Password,
-                                CreatedDate = DateTime.Now,
-                                UserGroupId = new UserGroup { Description = model.GroupDescription },
-                                UserStateId = new UserState { Description = model.StateDescription }
+                                CreatedDate = DateTime.Now
                             };
 
-                            if (model.GroupCode == "User")
-                            {
-                                user.UserGroupId.Code = GroupEnum.User;
-                            }
-
                             await _userRepository.Add(user);
+                            await _userRepository.Save();
+
+                            await _userRepository.AddDescription(user, model.GroupDescription, model.StateDescription);
+
                             if (model.GroupCode == "Admin")
                             {
-                                if (await _userRepository.AddRole(user, model.GroupCode) == null)
+                                var addRole = await _userRepository.AddRole(user, model.GroupCode);
+                                if (addRole == null)
                                 {
+                                    await _userRepository.Remove(user);
+                                    await _userRepository.Save();
                                     return Content("Админ уже существует");
                                 }
                             }

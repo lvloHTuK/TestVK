@@ -9,7 +9,7 @@ namespace UsersVK.Models
         public string Login { get; set; }
         public string Password { get; set; }
         public DateTime CreatedDate { get; set; }
-        public UserGroup UserGroupId { get; set; }
-        public UserState UserStateId { get; set; }
+        public Guid UserGroupId { get; set; }
+        public Guid UserStateId { get; set; }
     }
 }

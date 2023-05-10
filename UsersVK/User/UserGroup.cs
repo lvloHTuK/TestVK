@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace UsersVK.Models
 {
-    public enum GroupEnum
+    public enum GroupEnum : int
     {
-        Admin,
-        User
+        Admin = 1,
+        User = 0
     }
     public class UserGroup
     {
