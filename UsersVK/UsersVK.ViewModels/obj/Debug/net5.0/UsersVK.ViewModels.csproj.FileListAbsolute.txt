@@ -1,0 +1,12 @@
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.ViewModels\bin\Debug\net5.0\UsersVK.ViewModels.deps.json
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.ViewModels\bin\Debug\net5.0\UsersVK.ViewModels.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.ViewModels\bin\Debug\net5.0\ref\UsersVK.ViewModels.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.ViewModels\bin\Debug\net5.0\UsersVK.ViewModels.pdb
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.ViewModels\obj\Debug\net5.0\UsersVK.ViewModels.csproj.AssemblyReference.cache
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.ViewModels\obj\Debug\net5.0\UsersVK.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.ViewModels\obj\Debug\net5.0\UsersVK.ViewModels.AssemblyInfoInputs.cache
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.ViewModels\obj\Debug\net5.0\UsersVK.ViewModels.AssemblyInfo.cs
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.ViewModels\obj\Debug\net5.0\UsersVK.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.ViewModels\obj\Debug\net5.0\UsersVK.ViewModels.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.ViewModels\obj\Debug\net5.0\ref\UsersVK.ViewModels.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.ViewModels\obj\Debug\net5.0\UsersVK.ViewModels.pdb

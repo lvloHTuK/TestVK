@@ -1,0 +1,17 @@
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Data\bin\Debug\net5.0\UsersVK.Data.deps.json
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Data\bin\Debug\net5.0\UsersVK.Data.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Data\bin\Debug\net5.0\ref\UsersVK.Data.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Data\bin\Debug\net5.0\UsersVK.Data.pdb
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Data\bin\Debug\net5.0\UsersVK.Interfaces.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Data\bin\Debug\net5.0\UsersVK.Models.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Data\bin\Debug\net5.0\UsersVK.Interfaces.pdb
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Data\bin\Debug\net5.0\UsersVK.Models.pdb
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Data\obj\Debug\net5.0\UsersVK.Data.csproj.AssemblyReference.cache
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Data\obj\Debug\net5.0\UsersVK.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Data\obj\Debug\net5.0\UsersVK.Data.AssemblyInfoInputs.cache
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Data\obj\Debug\net5.0\UsersVK.Data.AssemblyInfo.cs
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Data\obj\Debug\net5.0\UsersVK.Data.csproj.CoreCompileInputs.cache
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Data\obj\Debug\net5.0\UsersVK.Data.csproj.CopyComplete
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Data\obj\Debug\net5.0\UsersVK.Data.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Data\obj\Debug\net5.0\ref\UsersVK.Data.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Data\obj\Debug\net5.0\UsersVK.Data.pdb

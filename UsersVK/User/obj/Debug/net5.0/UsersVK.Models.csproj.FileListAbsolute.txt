@@ -1,0 +1,12 @@
+C:\Users\Vladi\TestVK\UsersVK\User\bin\Debug\net5.0\UsersVK.Models.deps.json
+C:\Users\Vladi\TestVK\UsersVK\User\bin\Debug\net5.0\UsersVK.Models.dll
+C:\Users\Vladi\TestVK\UsersVK\User\bin\Debug\net5.0\ref\UsersVK.Models.dll
+C:\Users\Vladi\TestVK\UsersVK\User\bin\Debug\net5.0\UsersVK.Models.pdb
+C:\Users\Vladi\TestVK\UsersVK\User\obj\Debug\net5.0\UsersVK.Models.csproj.AssemblyReference.cache
+C:\Users\Vladi\TestVK\UsersVK\User\obj\Debug\net5.0\UsersVK.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladi\TestVK\UsersVK\User\obj\Debug\net5.0\UsersVK.Models.AssemblyInfoInputs.cache
+C:\Users\Vladi\TestVK\UsersVK\User\obj\Debug\net5.0\UsersVK.Models.AssemblyInfo.cs
+C:\Users\Vladi\TestVK\UsersVK\User\obj\Debug\net5.0\UsersVK.Models.csproj.CoreCompileInputs.cache
+C:\Users\Vladi\TestVK\UsersVK\User\obj\Debug\net5.0\UsersVK.Models.dll
+C:\Users\Vladi\TestVK\UsersVK\User\obj\Debug\net5.0\ref\UsersVK.Models.dll
+C:\Users\Vladi\TestVK\UsersVK\User\obj\Debug\net5.0\UsersVK.Models.pdb

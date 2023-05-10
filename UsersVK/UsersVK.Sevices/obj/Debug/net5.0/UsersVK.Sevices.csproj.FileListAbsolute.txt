@@ -1,0 +1,12 @@
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Sevices\bin\Debug\net5.0\UsersVK.Sevices.deps.json
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Sevices\bin\Debug\net5.0\UsersVK.Sevices.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Sevices\bin\Debug\net5.0\ref\UsersVK.Sevices.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Sevices\bin\Debug\net5.0\UsersVK.Sevices.pdb
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Sevices\obj\Debug\net5.0\UsersVK.Sevices.csproj.AssemblyReference.cache
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Sevices\obj\Debug\net5.0\UsersVK.Sevices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Sevices\obj\Debug\net5.0\UsersVK.Sevices.AssemblyInfoInputs.cache
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Sevices\obj\Debug\net5.0\UsersVK.Sevices.AssemblyInfo.cs
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Sevices\obj\Debug\net5.0\UsersVK.Sevices.csproj.CoreCompileInputs.cache
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Sevices\obj\Debug\net5.0\UsersVK.Sevices.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Sevices\obj\Debug\net5.0\ref\UsersVK.Sevices.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Sevices\obj\Debug\net5.0\UsersVK.Sevices.pdb

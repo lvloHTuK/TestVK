@@ -1,0 +1,15 @@
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Interfaces\bin\Debug\net5.0\UsersVK.Interfaces.deps.json
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Interfaces\bin\Debug\net5.0\UsersVK.Interfaces.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Interfaces\bin\Debug\net5.0\ref\UsersVK.Interfaces.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Interfaces\bin\Debug\net5.0\UsersVK.Interfaces.pdb
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Interfaces\bin\Debug\net5.0\UsersVK.Models.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Interfaces\bin\Debug\net5.0\UsersVK.Models.pdb
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Interfaces\obj\Debug\net5.0\UsersVK.Interfaces.csproj.AssemblyReference.cache
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Interfaces\obj\Debug\net5.0\UsersVK.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Interfaces\obj\Debug\net5.0\UsersVK.Interfaces.AssemblyInfoInputs.cache
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Interfaces\obj\Debug\net5.0\UsersVK.Interfaces.AssemblyInfo.cs
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Interfaces\obj\Debug\net5.0\UsersVK.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Interfaces\obj\Debug\net5.0\UsersVK.Interfaces.csproj.CopyComplete
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Interfaces\obj\Debug\net5.0\UsersVK.Interfaces.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Interfaces\obj\Debug\net5.0\ref\UsersVK.Interfaces.dll
+C:\Users\Vladi\TestVK\UsersVK\UsersVK.Interfaces\obj\Debug\net5.0\UsersVK.Interfaces.pdb
